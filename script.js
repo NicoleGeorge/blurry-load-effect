@@ -13,6 +13,8 @@ function blurring() {
   if (load > 99) {
     clearInterval(int);
   }
-  console.log(load); - working
-  
+//   console.log(load); - working
+
+loadText.innerHTML = `${load}%`
+
 }
