@@ -13,18 +13,18 @@ function blurring() {
   if (load > 99) {
     clearInterval(int);
   }
-//   console.log(load); - working
+  //   console.log(load); - working
 
-loadText.innerHTML = `${load}%`
+  loadText.innerHTML = `${load}%`;
 
-// Stack Overflow code snippet - linked below
-// https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
+  // Stack Overflow code snippet - linked below
+  // https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
 
-loadText.style.opacity = scale(load, 0, 100, 1, 0)
-
+  loadText.style.opacity = scale(load, 0, 100, 1, 0);
+  //   map through blur to start at 30px
+  bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`;
 }
 
-
 const scale = (num, in_min, in_max, out_min, out_max) => {
-    return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-  }
+  return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
+};
