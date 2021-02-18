@@ -3,8 +3,12 @@ const bg = document.querySelector('.bg');
 
 let load = 0;
 
-function blurring() {
-    load++
+// interval to run every 30seconds
 
-    console.log(load)
+let int = setInterval(blurring, 30);
+
+function blurring() {
+  load++;
+
+  console.log(load);
 }
