@@ -18,15 +18,17 @@ body {
   background: url('https://images.unsplash.com/photo-1590004770788-e94b5b222cd8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1997&q=80')
     no-repeat center center/cover;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    top: -30px;
+    left: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
     z-index: -1;
     filter: blur(0px);
 }
 
 .loading-text {
   font-size: 50px;
-  color: white;
+  font-weight: 800;
+  color: black;
+  background-color: rgba(255, 203, 73, 0.563);
 }
